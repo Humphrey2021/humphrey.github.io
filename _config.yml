@@ -105,4 +105,6 @@ theme: inside
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+- type: git
+  repo: git@github.com:Humphrey2021/humphrey.github.io.git
+  branch: blog
