@@ -106,5 +106,9 @@ theme: inside
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
 - type: git
+  # 提交到 github
   repo: git@github.com:Humphrey2021/humphrey.github.io.git
   branch: blog
+  # 提交到 gitee
+  # repo: git@gitee.com:rdhuang/rdhuang.git
+  # branch: master
