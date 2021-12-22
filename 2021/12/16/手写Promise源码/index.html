@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>手写Promise源码 - Humphrey`s Blog</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="https://rdhuang.gitee.io/2021/12/16/%E6%89%8B%E5%86%99Promise%E6%BA%90%E7%A0%81/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<meta name="description" content="从简单到复杂一步步实现自己的Promise  因为不好拆解，如果想直接看最终版，请跳转到文章末尾最后一个代码块  在手写源码的之前，首先需要知道Promise是什么，都做了哪些操作   Promise是一个类,在执行这个类的时候，需要传递一个执行器进去，执行器会立即执行   Promise中有三种状态，分别为 成功(fulfilled) 、失败(rejected)、等待(pending)。只能从等">
+<meta property="og:type" content="website">
+<meta property="og:title" content="手写Promise源码">
+<meta property="og:url" content="https://rdhuang.gitee.io/2021/12/16/%E6%89%8B%E5%86%99Promise%E6%BA%90%E7%A0%81/index.html">
+<meta property="og:site_name" content="Humphrey&#96;s Blog">
+<meta property="og:description" content="从简单到复杂一步步实现自己的Promise  因为不好拆解，如果想直接看最终版，请跳转到文章末尾最后一个代码块  在手写源码的之前，首先需要知道Promise是什么，都做了哪些操作   Promise是一个类,在执行这个类的时候，需要传递一个执行器进去，执行器会立即执行   Promise中有三种状态，分别为 成功(fulfilled) 、失败(rejected)、等待(pending)。只能从等">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://rdhuang.gitee.io/images/bolg/avatar/01.jpg">
+<meta property="article:published_time" content="2021-12-16T12:05:44.000Z">
+<meta property="article:modified_time" content="2021-12-22T12:44:49.867Z">
+<meta property="article:author" content="Humphrey">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="Promise">
+<meta property="article:tag" content="源码">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://rdhuang.gitee.io/images/bolg/avatar/01.jpg">
+
+
+<!-- hexo injector head_end start --><link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet"><link href="/styles.43478ea7e28ed563c48b.css" rel="stylesheet">
+<script src="/config.cf44b316bdb347dcafc0.js"></script>
+
+<link rel="stylesheet" href="/theme.9a110498fb03f1829589.css" is="theme">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.2.0"></head>
+<body lang="en"><!-- hexo injector body_begin start --><is-a></is-a><!-- hexo injector body_begin end --><!-- hexo injector body_end start --><script src="/runtime.b15aa7186c559b492b7d.js"></script><script src="/polyfills.824ff89b5f3ca4543a31.js"></script><script src="/main.03652fc423a687c817e8.js"></script><!-- hexo injector body_end end --></body>
+</html>
